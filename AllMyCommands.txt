@@ -1,0 +1,185 @@
+    1  init
+    2  git init
+    3  git init
+    4  clear
+    5  top
+    6  tasklist
+    7  q
+    8  clear
+    9  whatis rmdir
+   10  man
+   11  exit
+   12  git init
+   13  git add "1.1 Getting Started.txt"
+   14   git add "3.1 Git Branching.txt"
+   15  git add "5.1 Distributed Git.txt"
+   16  git remote add origin https://github.com/MostafaAmer-2/SPRINT0-individual.git
+   17  git commit -m "first commit"
+   18  git rm --cache "3.1 Git Branching.txt"
+   19  git status
+   20  git reset --soft HEAD^
+   21  git reset HEAD "3.1 Git Branching.txt"
+   22  git status
+   23  git commit -m "file restored"
+   24  git push origin master
+   25  git branch ReadMe
+   26  git branch
+   27  git checkout ReadMe
+   28  git add "README.md"
+   29  git commit -m "README.md added to ReadMe branch"
+   30  git status
+   31  git merge ReadMe
+   32  git checkout master
+   33  git merge ReadMe
+   34  git push origin master
+   35  history > AllMyCommands.txt
+
+
+
+
+
+
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final
+$ git init
+Initialized empty Git repository in E:/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final/.git/
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$ git add "1.1 Getting Started.txt"
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$  git add "3.1 Git Branching.txt"
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$ git add "5.1 Distributed Git.txt"
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$ git remote add origin https://github.com/MostafaAmer-2/SPRINT0-individual.git
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$ git commit -m "first commit"
+[master (root-commit) e022f58] first commit
+ 3 files changed, 187 insertions(+)
+ create mode 100644 1.1 Getting Started.txt
+ create mode 100644 3.1 Git Branching.txt
+ create mode 100644 5.1 Distributed Git.txt
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$ git rm --cache "3.1 Git Branching.txt"
+rm '3.1 Git Branching.txt'
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    3.1 Git Branching.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        3.1 Git Branching.txt
+        AllMyCommands.txt
+
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$ git reset --soft HEAD^
+fatal: ambiguous argument 'HEAD^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$ git reset HEAD "3.1 Git Branching.txt"
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        AllMyCommands.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$ git commit -m "file restored"
+On branch master
+Untracked files:
+        AllMyCommands.txt
+
+nothing added to commit but untracked files present
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 7.95 KiB | 3.97 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/MostafaAmer-2/SPRINT0-individual.git
+ * [new branch]      master -> master
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$ git branch ReadMe
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$ git branch
+  ReadMe
+* master
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$ git checkout ReadMe
+Switched to branch 'ReadMe'
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (ReadMe)
+$ git add "README.md"
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (ReadMe)
+$ git commit -m "README.md added to ReadMe branch"
+[ReadMe 37e3558] README.md added to ReadMe branch
+ 1 file changed, 8 insertions(+)
+ create mode 100644 README.md
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (ReadMe)
+$ git status
+On branch ReadMe
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        AllMyCommands.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (ReadMe)
+$ git merge ReadMe
+Already up to date.
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (ReadMe)
+$ git checkout master
+Switched to branch 'master'
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$ git merge ReadMe
+Updating e022f58..37e3558
+Fast-forward
+ README.md | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+ create mode 100644 README.md
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 465 bytes | 465.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MostafaAmer-2/SPRINT0-individual.git
+   e022f58..37e3558  master -> master
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$ history > AllMyCommands.txt
+
+Mostafa@DESKTOP-1RNSKAE MINGW64 /e/Mostafa/Semester 6/SE/Project/Sprint0/Individual S0 final (master)
+$
